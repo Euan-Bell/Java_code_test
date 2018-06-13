@@ -18,4 +18,9 @@ public class itemTest {
     public void canGetItemName(){
      assertEquals("Beans", item.getName());
  }
+
+ @Test
+    public void canGetItemPrice(){
+     assertEquals(05.00, item.getPrice(),00.01);
+ }
 }
