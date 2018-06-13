@@ -11,4 +11,9 @@ public class Basket {
     public int getCapacity() {
        return  shoppingBasket.size();
     }
+
+    public void addItem(Item item) {
+        shoppingBasket.add(item);
+
+    }
 }

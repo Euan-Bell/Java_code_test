@@ -2,7 +2,6 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,16 +9,23 @@ import static org.junit.Assert.assertEquals;
 public class basketTest {
 
 Basket shoppingBasket;
+Item item;
 
 @Before
 public void before(){
     shoppingBasket = new Basket();
+    item = new Item("Spam", 01.00);
 }
 
 
 @Test
     public void canCheckShoppingBasketCapacity(){
     assertEquals(0,shoppingBasket.getCapacity());
+    }
 
-}
+@Test
+    public void canAddItemToBasket(){
+    shoppingBasket.addItem(item);
+    assertEquals(1,shoppingBasket.getCapacity());
+    }
 }
