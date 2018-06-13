@@ -53,4 +53,10 @@ public void before(){
     shoppingBasket.removeItem(item2);
     assertEquals(0,shoppingBasket.getCapacity());
     }
+
+@Test
+    public void canGetItemInBasketPrice(){
+    shoppingBasket.addItem(item);
+    assertEquals(01.00, item.getPrice(), 00.01);
+}
 }
