@@ -28,4 +28,11 @@ public void before(){
     shoppingBasket.addItem(item);
     assertEquals(1,shoppingBasket.getCapacity());
     }
+
+ @Test
+    public void canRemoveItemFromBasket(){
+    shoppingBasket.addItem(item);
+    shoppingBasket.removeItem(item);
+    assertEquals(0,shoppingBasket.getCapacity());
+    }
 }
